@@ -62,8 +62,7 @@
                         Av. Providencia 1234, Oficina 601
                         Providencia, Santiago
                         Chile</p>
-                    <p class="card-text">Contacto telefónico:
-                        Teléfono: +56 2 1234 5678</p>
+                    <p class="card-text">Contacto telefónico: +56 2 1234 5678</p>
                     <p class="card-text">Dominio de la página web: www.coningenio.cl</p>
                     <p class="card-text">Correo electrónico:
                         info@coningenio.cl
