@@ -1,5 +1,33 @@
+img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+
+.div-h1 {
+    background-color: #e7e7e7a2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    max-width: 70%;
+    margin-left: 10%;
+}
+
+.aboutUs {
+    background-color: #e7e7e7a2;
+    max-width: 70%;
+    margin-left: 10%;
+}
+
 /* Estilos para el modo nocturno */
 .dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
+    .div-h1 {
+        background-color: #353535a2;
+    }
+    .aboutUs {
+        background-color: #353535a2;
+        max-width: 70%;
+        margin-left: 10%;
+    }
 }

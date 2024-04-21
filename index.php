@@ -11,42 +11,53 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Mi Empresa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Nuestros Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contáctenos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutUs">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <button id="toggleMode" class="btn btn-link">Cambiar Modo</button>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Home -->
-    <div class="container mt-5" id="home">
-        <h1>¡Bienvenidos a Mi Empresa!</h1>
-        <p>Introducción a nuestra empresa...</p>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="d-flex flex-row">
+        <div>
+            <a class="navbar-brand" href="#">
+            <img src="./images/logo-grande.png">
+        </div> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>       
     </div>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Nuestros Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contáctenos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutUs">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <button id="toggleMode" class="btn btn-link">Cambiar Modo</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Home -->
+<div class="container mt-5 div-h1 border-left rounded">
+    <h1>Bienvenido a ConIngenio.</h1>
+</div>
+<div class="container mt-3 border-left div-h1">
+    <p class="texto-home">Somos una empresa apasionada por la programación y la tecnología, dedicada a ofrecer 
+        soluciones innovadoras para satisfacer las necesidades de nuestros clientes. 
+        En ConIngenio, nos esforzamos por brindar 
+        servicios de alta calidad que impulsen el éxito de tu negocio.
+    </p>
+</div>
 
     <!-- Nuestros Servicios -->
-    <div class="container mt-5">
+    <div class="container mt-5 div-h1">
         <h2>Nuestros Servicios</h2>
         <div class="row" id="services">
         </div>
@@ -54,7 +65,7 @@
 
     <!-- Contáctenos -->
     <section class="py-3 py-md-5" id="contact">
-        <div class="container">
+        <div class="container div-h1">
             <div class="row gy-3 gy-md-4 gy-lg-0">
                 <div class="col-12 col-lg-6">
                     <h3>Contáctenos</h3>
@@ -85,7 +96,7 @@
                             <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
                                 placeholder="Escribe tu mensaje"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -94,7 +105,7 @@
     
     <!-- Acerca de Nosotros -->
     <section class="py-3 py-md-5">
-        <div class="container">
+        <div class="container div-h1">
             <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                 <div class="col-12 col-lg-6 col-xl-5">
                     <img class="img-fluid rounded" loading="lazy" src="./images/con-ingenio-solo-colores.png"
@@ -109,6 +120,23 @@
             </div>
         </div>
     </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Gracias!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Su información fue enviada exitosamente.
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
